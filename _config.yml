@@ -27,3 +27,11 @@ theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: "/:year-:month-:day/:title.html"
