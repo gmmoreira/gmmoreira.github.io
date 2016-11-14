@@ -27,6 +27,11 @@ disqus:
 
 author: "Guilherme Moreira"
 github_username: gmmoreira
+social:
+  name: Guilherme Moreira
+  links:
+    - https://www.linkedin.com/in/guilherme-maganha-moreira-b3890a27
+    - https://github.com/gmmoreira
 
 defaults:
   -
