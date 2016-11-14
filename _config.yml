@@ -21,6 +21,11 @@ url: "http://gmmoreira.com" # the base hostname & protocol for your site, e.g. h
 contact_url: "/contact"
 github_username: gmmoreira
 
+google_analytics: UA-87391824-1
+
+disqus:
+  shortname: gmmoreira
+
 # Build settings
 markdown: kramdown
 theme: minima
