@@ -13,25 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+#
 title: Guilherme Moreira
 email: guilherme@gmmoreira.com
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gmmoreira.com" # the base hostname & protocol for your site, e.g. http://example.com
-contact_url: "/contact"
-github_username: gmmoreira
-
+description: >
+  Yet another blog sobre programação.
+baseurl: ""
+url: "http://gmmoreira.com"
+timezone: "America/Sao_Paulo"
 google_analytics: UA-87391824-1
-
 disqus:
   shortname: gmmoreira
 
-# Build settings
-markdown: kramdown
-theme: minima
-exclude:
-  - Gemfile
-  - Gemfile.lock
+author: "Guilherme Moreira"
+github_username: gmmoreira
 
 defaults:
   -
@@ -40,3 +35,13 @@ defaults:
       type: "posts"
     values:
       permalink: "/:year-:month-:day/:title.html"
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
