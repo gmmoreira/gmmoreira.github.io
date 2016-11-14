@@ -3,6 +3,7 @@ layout: post
 title:  "O que aprendi hoje: git update-index --assume-unchanged"
 date:   2016-11-10 23:22:47 -0200
 categories: git update-index
+description: Impedindo que um arquivo versionado e alterado localmente seja "commitado" por engano utilizando o comando git update-index --assume-unchanged
 ---
 Uma coisa que sempre me incomoda é alterar um arquivo versionado pelo repositório, como por exemplo um arquivo de configuração e sempre que executo o `git status` esse arquivo ser listado.
 
@@ -39,7 +40,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 {% endhighlight %}
 
-Caso tenhamos feito várias alterações, podemos até mesmo usar o `git add .` e o arquivo `config/database.yml` não irá pro commit.
+Caso tenhamos feito várias alterações, podemos até mesmo usar o `git add .` e o arquivo `config/database.yml` não irá pro stage do commit.
 
 Importante lembrar que mesmo o arquivo sendo alterado novamente ele não será listado para entrar no commit. Para isso precisamos remover o flag:
 
